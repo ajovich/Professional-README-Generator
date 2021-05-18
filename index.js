@@ -1,7 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
 inquirer
   .prompt([
     {
@@ -17,8 +16,8 @@ inquirer
     {
       // Table of Content Links -- ??? How do I do this?
       type: "input",
-      name: "bio",
-      message: "What is your bio?",
+      name: "links",
+      message: "How do I list links?",
     },
     {
       type: "input",
@@ -52,14 +51,14 @@ inquirer
     },
   ])
 
-//   .then((response) => {
-//     console.log(response);
-//     const html = generateHTML(response);
-//     const filename = `${response.name.toLowerCase().split(" ").join("")}.html`;
-//     fs.writeFile(filename, html, (err) =>
-//       err ? console.log(err) : console.log("Success!")
-//     );
-//   });
+  .then((response) => {
+    console.log(response);
+//  const html = generateHTML(response);
+//  const filename = `${response.name.toLowerCase().split(" ").join("")}.html`;
+//  fs.writeFile(filename, html, (err) =>
+//    err ? console.log(err) : console.log("Success!")
+//  );
+});
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
