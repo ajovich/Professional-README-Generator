@@ -1,8 +1,11 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-inquirer
-  .prompt([
+// Promise function 
+// const writeFileAsync = util.promisify(fs.writeFile);
+
+const promptUser = () => {
+  return inquirer.prompt([
     {
       type: "input",
       name: "project_title",
@@ -12,12 +15,6 @@ inquirer
       type: "input",
       name: "description",
       message: "What is the description of your project?",
-    },
-    {
-      // Table of Content Links -- ??? How do I do this?
-      type: "input",
-      name: "links",
-      message: "How do I list links?",
     },
     {
       type: "input",
@@ -30,9 +27,10 @@ inquirer
       message: "What are the instructions and examples for use?",
     },
     {
-      type: "input",
+      type: "list",
       name: "license",
       message: "Select the open source license desired from the list below. If none, leave empty.",
+      choices: ['MIT License', 'GNU GPL', '', '', '']
     },
     {
       type: "input",
@@ -50,21 +48,43 @@ inquirer
         message: "Enter your GitHub profile name and e-mail.",
     },
   ])
-
   .then((response) => {
     console.log(response);
-//  const html = generateHTML(response);
-//  const filename = `${response.name.toLowerCase().split(" ").join("")}.html`;
-//  fs.writeFile(filename, html, (err) =>
-//    err ? console.log(err) : console.log("Success!")
-//  );
-});
+  })
+  };
+
+
+//   .then((response) => {
+//     console.log(response);
+// //  const html = generateHTML(response);
+// //  const filename = `${response.name.toLowerCase().split(" ").join("")}.html`;
+// //  fs.writeFile(filename, html, (err) =>
+// //    err ? console.log(err) : console.log("Success!")
+// //  );
+// });
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+// ${answers.project_title}
+// ${answers.description}
+// ${answers.installation}
+// ${answers.usage}
+// ${answers.license}
+// ${answers.contributing}
+// ${answers.tests}
+// ${answers.questions}
+}
 
 // TODO: Create a function to initialize app
 function init() {}
+
+// writeFileAsync as a promis // Need to change to reflect README
+// const init = () => {
+//   promptUser()
+//     .then((answers) => writeFileAsync('index.html', generateHTML(answers)))
+//     .then(() => console.log('Successfully wrote to index.html'))
+//     .catch((err) => console.error(err));
+// };
 
 // Function call to initialize app
 init();
