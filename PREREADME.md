@@ -48,7 +48,11 @@
 
 ## Animation & Images
 
-* TBD
+* https://drive.google.com/file/d/15rm6ya5ubE9q_nNEldPOChx0W7FQyKsR/view
+
+![User input on the command line](images/terminal.png)
+
+![Generated README.md from user input](images/readme_terminal.png)
 
 
 ## Link to GitHub Repository

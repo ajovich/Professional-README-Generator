@@ -86,7 +86,7 @@ function generateMarkdown(data) {
 
   * GitHub profile name [${data.github}](https://github.com/${data.github})
 
-  * E-mail ${data.email}
+  * E-mail ${data.email} for additional questions
 `;
 }
 
