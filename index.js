@@ -1,90 +1,76 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./util/generateMarkdown.js');
 
-// Promise function 
-// const writeFileAsync = util.promisify(fs.writeFile);
+// Array of questions 
+const questions = [
+  { 
+    type: "input",
+    name: "title",
+    message: "What is the title of your project?",
+  },
+  {
+    type: "input",
+    name: "description",
+    message: "What is the description of your project? Use the following as a guide: your motivation behind the project, what problem does it solve, what did you learn, etc.",
+  },
+  {
+    type: "input",
+    name: "installation",
+    message: "What are the steps required to install your project? Provide a step-by-step description of how to get your project running.",
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "What are the instructions and examples for use?",
+  },
+  {
+    type: "list",
+    name: "license",
+    message: "Select the open source license desired from the list below.",
+    choices: ['MIT License', 'GNU GPL', 'Apache License 2.0', 'ISC', 'None']
+  },
+  {
+    type: "input",
+    name: "contributing",
+    message: "List your collaborators, if any.",
+  },
+  {
+      type: "input",
+      name: "tests",
+      message: "Write tests for your application here.",
+  },
+  {
+      type: "input",
+      name: "github",
+      message: "Enter your GitHub profile name.",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "Enter your e-mail.",
+  },
+]
 
-const promptUser = () => {
-  return inquirer.prompt([
-    {
-      type: "input",
-      name: "project_title",
-      message: "What is the title of your project?",
-    },
-    {
-      type: "input",
-      name: "description",
-      message: "What is the description of your project?",
-    },
-    {
-      type: "input",
-      name: "installation",
-      message: "What are the steps required to install your project? Provide a step-by-step description of how to get your project running.",
-    },
-    {
-      type: "input",
-      name: "usage",
-      message: "What are the instructions and examples for use?",
-    },
-    {
-      type: "list",
-      name: "license",
-      message: "Select the open source license desired from the list below. If none, leave empty.",
-      choices: ['MIT License', 'GNU GPL', '', '', '']
-    },
-    {
-      type: "input",
-      name: "contributing",
-      message: "List your collaborators, if any.",
-    },
-    {
-        type: "input",
-        name: "tests",
-        message: "Write tests for your application here.",
-    },
-    {
-        type: "input",
-        name: "questions",
-        message: "Enter your GitHub profile name and e-mail.",
-    },
-  ])
-  .then((response) => {
-    console.log(response);
-  })
-  };
-
-
-//   .then((response) => {
-//     console.log(response);
-// //  const html = generateHTML(response);
-// //  const filename = `${response.name.toLowerCase().split(" ").join("")}.html`;
-// //  fs.writeFile(filename, html, (err) =>
-// //    err ? console.log(err) : console.log("Success!")
-// //  );
-// });
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-// ${answers.project_title}
-// ${answers.description}
-// ${answers.installation}
-// ${answers.usage}
-// ${answers.license}
-// ${answers.contributing}
-// ${answers.tests}
-// ${answers.questions}
+// Function to write README file
+function writeFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+    if (err) {
+      return console.log(err)
+    } else { 
+      console.log("Successfully wrote README.md")
+    }
+  });
 }
 
-// TODO: Create a function to initialize app
-function init() {}
-
-// writeFileAsync as a promis // Need to change to reflect README
-// const init = () => {
-//   promptUser()
-//     .then((answers) => writeFileAsync('index.html', generateHTML(answers)))
-//     .then(() => console.log('Successfully wrote to index.html'))
-//     .catch((err) => console.error(err));
-// };
+// Function to initialize app
+const init = () => {
+  inquirer.prompt(questions)
+  .then(function (data) {
+    writeFile("README.md", generateMarkdown(data));
+    console.log(data)
+  });
+}
 
 // Function call to initialize app
 init();

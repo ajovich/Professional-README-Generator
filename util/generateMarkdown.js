@@ -1,24 +1,30 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
 
-// TODO: Create a function to generate markdown for README
+}
+
+// Function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  # ${data.project_title}
+  # ${data.title}
 
   ## Description
 
-  * What is the description of your project? ${data.description}
+  * ${data.description}
 
   ## Table of Contents
 
@@ -31,27 +37,29 @@ function generateMarkdown(data) {
   
   ## Installation
   
-  * What are the steps required to install your project? Provide a step-by-step description of how to get your project running. ${data.installation}
+  * These are the following necessary dependencies needed to be installed prior to running this application:  ${data.installation}
 
   ## Usage
 
   * What are the instructions and examples for use? ${data.usage}
 
   ## License
-
+  
   * ${data.license}
 
   ## Contributing
 
-  * List your collaborators, if any. ${data.contributing}
+  * Contributors: ${data.contributing}
 
   ## Tests
 
-  * Write tests for your application here. ${data.tests}
+  * The following is needed to run the test: ${data.tests}
 
   ## Questions
 
-  * Enter your GitHub profile name and e-mail. ${data.questions}
+  * GitHub profile name [${data.github}](https://github.com/${data.github})
+
+  * E-mail ${data.email}
 `;
 }
 
