@@ -47,8 +47,6 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  # ${data.title}
-
   ## Description
 
   * ${data.description}

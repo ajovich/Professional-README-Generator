@@ -1,8 +1,8 @@
-  # README Generator
+# Professional README Generator
 
   ## Description
 
-  * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quam id leo in vitae turpis. Et netus et malesuada fames ac. Consectetur lorem donec massa sapien faucibus et molestie ac. Ultrices tincidunt arcu non sodales neque sodales. Pellentesque massa placerat duis ultricies lacus sed turpis. In arcu cursus euismod quis viverra. Viverra nam libero justo laoreet. 
+  * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
   ## Table of Contents
 
@@ -15,11 +15,11 @@
   
   ## Installation
   
-  * These are the following necessary dependencies needed to be installed prior to running this application:  Node.js and Inquirer npm package
+  * In order to run this application, please ensure node.js is downloaded. This application also utilizes the Inquirer npm package.
 
   ## Usage
 
-  * What are the instructions and examples for use? Use node index.js on the command line
+  * This is a command line application. Use the command line and run node index.js 
 
   ## License
   
@@ -27,11 +27,11 @@
 
   ## Contributing
 
-  * Contributors: None
+  * Allysha Jovich
 
   ## Tests
 
-  * The following is needed to run the test: 
+  * 
 
   ## Questions
 
