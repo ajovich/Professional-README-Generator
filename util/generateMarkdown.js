@@ -64,11 +64,11 @@ function generateMarkdown(data) {
   
   ## Installation
   
-  * These are the following necessary dependencies needed to be installed prior to running this application:  ${data.installation}
+  * ${data.installation}
 
   ## Usage
 
-  * What are the instructions and examples for use? ${data.usage}
+  * ${data.usage}
 
   ## License
   
@@ -76,11 +76,11 @@ function generateMarkdown(data) {
 
   ## Contributing
 
-  * Contributors: ${data.contributing}
+  * ${data.contributing}
 
   ## Tests
 
-  * The following is needed to run the test: ${data.tests}
+  * ${data.tests}
 
   ## Questions
 
