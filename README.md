@@ -1,10 +1,10 @@
-# Hello There!
+# README Generator
 
-  # Hello There!
+  # README Generator
 
   ## Description
 
-  * Great
+  * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quam id leo in vitae turpis. Et netus et malesuada fames ac. Consectetur lorem donec massa sapien faucibus et molestie ac. Ultrices tincidunt arcu non sodales neque sodales.
 
   ## Table of Contents
 
@@ -17,26 +17,26 @@
   
   ## Installation
   
-  * These are the following necessary dependencies needed to be installed prior to running this application:  No
+  * These are the following necessary dependencies needed to be installed prior to running this application:  Node and Inquirer npm package
 
   ## Usage
 
-  * What are the instructions and examples for use? Yes
+  * What are the instructions and examples for use? Use in the terminal
 
   ## License
   
-  * MIT License
+  * MIT
 
   ## Contributing
 
-  * Contributors: Please
+  * Contributors: None
 
   ## Tests
 
-  * The following is needed to run the test: Myself
+  * The following is needed to run the test: No
 
   ## Questions
 
-  * GitHub profile name [Ok](https://github.com/Ok)
+  * GitHub profile name [ajovich](https://github.com/ajovich)
 
-  * E-mail No
+  * E-mail ajovich@hotmail.com

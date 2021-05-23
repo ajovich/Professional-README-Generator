@@ -28,7 +28,7 @@ const questions = [
     type: "list",
     name: "license",
     message: "Select the open source license desired from the list below.",
-    choices: ['MIT License', 'GNU GPL', 'Apache License 2.0', 'ISC', 'None']
+    choices: ['MIT', 'GNU GPL', 'Apache License 2.0', 'ISC', 'None']
   },
   {
     type: "input",
