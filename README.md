@@ -1,40 +1,61 @@
-# Professional README Generator
+# Professional-README-Generator
 
-  ## Description
 
-  * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Description
 
-  ## Table of Contents
+* This is a command-line application that will generate a professional README.md file from a user's input.
 
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
-  
-  ## Installation
-  
-  * In order to run this application, please ensure node.js is downloaded. This application also utilizes the Inquirer npm package.
+* Prompts for the README include the following:
 
-  ## Usage
+    * Title of Project
 
-  * This is a command line application. Use the command line and run node index.js 
+    * Description
 
-  ## License
-  
-  * MIT
+    * Table of Contents
 
-  ## Contributing
+    * Installation
 
-  * Allysha Jovich
+    * Usage
 
-  ## Tests
+    * License & Badges
 
-  * 
+    * Contributing
 
-  ## Questions
+    * Tests
 
-  * GitHub profile name [ajovich](https://github.com/ajovich)
+    * Questions
 
-  * E-mail ajovich@hotmail.com for additional questions
+
+## Goals
+
+* By allowing a user to have access to a README generator, the user:
+
+     * will waste less time on creating a high-quality README.
+
+    * will be able to focus more of their time and energy on creating their application. 
+
+
+## Usage
+
+* This program utilizes the Inquirer npm package. 
+
+    * Click [here](https://www.npmjs.com/package/inquirer) to go to npmjs.com/package/inquirer
+
+* In order to run this application, please ensure node.js is downloaded. 
+
+    * Click [here](https://nodejs.org/en/) to go to nodejs.org 
+
+
+## Animation & Images
+
+* https://drive.google.com/file/d/15rm6ya5ubE9q_nNEldPOChx0W7FQyKsR/view
+
+![User input on the command line](images/terminal.png)
+
+![Generated README.md from user input](images/readme_terminal.png)
+
+
+## Link to GitHub Repository
+
+* https://ajovich.github.io/Professional-README-Generator/
+* https://github.com/ajovich/Professional-README-Generator
